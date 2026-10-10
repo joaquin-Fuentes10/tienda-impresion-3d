@@ -98,7 +98,50 @@ footer {
   }
 }
     
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
 
+.tarjeta-producto {
+  padding: 20px;
+  border: 1px solid #303847;
+  border-radius: 16px;
+  background: var(--panel);
+}
+
+.imagen-producto {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #222a38;
+  color: #b7c0d1;
+  text-align: center;
+}
+
+.tarjeta-producto h3 {
+  margin: 0 0 8px;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.tarjeta-producto > a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--azul);
+  color: white;
+}
+
+.tarjeta-producto > a:hover {
+  background: var(--azul-hover);
+}
   
 
 
