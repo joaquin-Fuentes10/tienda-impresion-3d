@@ -44,9 +44,69 @@
     </section>
 
     <section id="personalizados">
-      <h2>¿Tenes una idea</h2>
-      <p>Contame que necesitas y revisamos si lo podemos fabricar.</p>
-    </section>
+  <h2>Pedidos personalizados</h2>
+  <p>Contame qué necesitás y revisamos si lo podemos fabricar.</p>
+
+  <form id="formulario-pedido">
+    <label for="pieza">¿Qué querés fabricar?</label>
+    <input
+      type="text"
+      id="pieza"
+      name="pieza"
+      placeholder="Ej.: soporte para celular o repuesto"
+      required
+    >
+
+    <label for="colores">¿Qué colores te gustaría combinar?</label>
+    <input
+      type="text"
+      id="colores"
+      name="colores"
+      placeholder="Ej.: cuerpo negro, detalles rojos"
+    >
+
+    <fieldset>
+      <legend>Medidas aproximadas</legend>
+
+      <label for="largo">Largo</label>
+      <input type="number" id="largo" name="largo" min="0" step="any">
+
+      <label for="ancho">Ancho</label>
+      <input type="number" id="ancho" name="ancho" min="0" step="any">
+
+      <label for="alto">Alto</label>
+      <input type="number" id="alto" name="alto" min="0" step="any">
+
+      <label for="unidad">Unidad</label>
+      <select id="unidad" name="unidad">
+        <option value="mm">Milímetros (mm)</option>
+        <option value="cm">Centímetros (cm)</option>
+      </select>
+    </fieldset>
+
+    <label for="cantidad">Cantidad de unidades iguales</label>
+    <input
+      type="number"
+      id="cantidad"
+      name="cantidad"
+      min="1"
+      value="1"
+      required
+    >
+
+    <label for="detalles">Detalles adicionales</label>
+    <textarea
+      id="detalles"
+      name="detalles"
+      rows="4"
+      placeholder="¿Para qué sirve? ¿Qué partes llevan cada color?"
+    ></textarea>
+
+    <button type="button" id="preparar-pedido">
+      Preparar pedido
+    </button>
+  </form>
+</section>
   </main>
 
   <footer>
