@@ -2,7 +2,7 @@ const formulario = document.querySelector("#formulario-pedido");
 const boton = document.querySelector("#preparar-pedido");
 const numeroWhatsApp = "";
 
-boton.addEvenListener("click", function () {
+boton.addEventListener("click", function () {
   if (!formulario.reportValidity()) {
     return;
   }
@@ -16,23 +16,22 @@ boton.addEvenListener("click", function () {
   const cantidad = document.querySelector("#cantidad").value;
   const detalles = document.querySelector("#detalles").value.trim() || "Sin detalles adicionales";
 
-  const mensaje = 'Hola quiero consultar por un pedido personalizado:
+  const mensaje = `Hola, quiero consultar por un pedido personalizado:
 
-  Producto: ${pieza}
-  Colores solicitados: ${colores}
-  Medidas: ${largo} x ${ancho} ${unidad}
-  Cantidad: ${cantidad}
-  Detalles: ${detalles}';
+Producto: ${pieza}
+Colores solicitados: ${colores}
+Medidas: ${largo} x ${ancho} x ${alto} ${unidad}
+Cantidad: ${cantidad}
+Detalles: ${detalles}`;
 
   if (numeroWhatsApp === "") {
-    alert("El pedido esta preparado. Mas adelante configuremos el numero de WhatsApp.");
-     return;
+    alert("El pedido está preparado. Más adelante configuraremos el número de WhatsApp.");
+    return;
   }
 
-  const enlace = `https://wa.me/${numeroWhatsApp}?
-  text=${encodeURIComponet(mensaje)}';
+  const enlace = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   window.open(enlace, "_blank", "noopener");
-  });
+});
   
   
                       
