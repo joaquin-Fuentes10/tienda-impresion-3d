@@ -102,13 +102,18 @@
       required
     >
 
-    <label for="colores">¿Qué colores te gustaría combinar?</label>
-    <input
-      type="text"
-      id="colores"
-      name="colores"
-      placeholder="Ej.: cuerpo negro, detalles rojos"
-    >
+  <fieldset>
+  <legend>¿Qué colores te gustaría combinar?</legend>
+  <p>Elegí uno o varios. Confirmaremos la disponibilidad al preparar el presupuesto.</p>
+
+  <label><input type="checkbox" name="colores" value="Negro"> Negro</label>
+  <label><input type="checkbox" name="colores" value="Blanco"> Blanco</label>
+  <label><input type="checkbox" name="colores" value="Rojo"> Rojo</label>
+  <label><input type="checkbox" name="colores" value="Azul"> Azul</label>
+  <label><input type="checkbox" name="colores" value="Verde"> Verde</label>
+  <label><input type="checkbox" name="colores" value="Amarillo"> Amarillo</label>
+  <label><input type="checkbox" name="colores" value="Otro"> Otro color; describilo en los detalles</label>
+  </fieldset>
 
     <fieldset>
       <legend>Medidas aproximadas</legend>
