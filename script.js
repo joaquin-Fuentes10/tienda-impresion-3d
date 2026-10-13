@@ -8,7 +8,8 @@ boton.addEventListener("click", function () {
   }
 
   const pieza = document.querySelector("#pieza").value.trim();
-  const colores = document.querySelector("#colores").value.trim() || "Sin preferencia";
+  const casillasColores = document.querySelectorAll('input[name="colores"]:checked');
+  const colores = Array.from(casillasColores, (casilla) => casilla.value).join(", ") || "Sin preferencia";
   const largo = document.querySelector("#largo").value.trim() || "No indicado";
   const ancho = document.querySelector("#ancho").value.trim() || "No indicado";
   const alto = document.querySelector("#alto").value.trim() || "No indicado";
