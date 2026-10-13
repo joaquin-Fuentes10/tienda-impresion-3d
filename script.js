@@ -1,6 +1,6 @@
 const formulario = document.querySelector("#formulario-pedido");
 const boton = document.querySelector("#preparar-pedido");
-const numeroWhatsApp = "";
+const numeroWhatsApp = "5493825679955";
 
 boton.addEventListener("click", function () {
   if (!formulario.reportValidity()) {
