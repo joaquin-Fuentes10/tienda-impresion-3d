@@ -167,6 +167,15 @@ footer {
   border-radius: 10px;
 }
 
+#personalizados .opciones-colores {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#personalizados .opciones-colores legend,
+#personalizados .opciones-colores p {
+  grid-column: 1 / -1;
+}
+
 #personalizados input,
 #personalizados select,
 #personalizados textarea {
