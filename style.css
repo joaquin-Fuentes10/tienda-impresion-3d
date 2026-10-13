@@ -173,10 +173,16 @@ footer {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #424c60;
-  border-radious: 8px;
+  border-radius: 8px;
   background: var(--fondo);
   color: var(--texto);
   font: inherit;
+}
+
+#personalizados input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: var(--azul);
 }
 
 #personalizados button {
@@ -196,10 +202,3 @@ footer {
 }
 
   
-  
-  
-  
-
-
-
-
