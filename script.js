@@ -23,7 +23,7 @@ boton.addEventListener("click", function () {
   const cantidad = document.querySelector("#cantidad").value;
   const detalles = document.querySelector("#detalles").value.trim() || "Sin detalles adicionales";
 
-  const mensaje = `Hola, quiero consultar por un pedido personalizado:
+  const mensaje = `Hola, quiero consultar el prosupuesto de este pedido:
 
 Producto: ${pieza}
 Colores solicitados: ${colores}
