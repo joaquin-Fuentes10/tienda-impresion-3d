@@ -2,9 +2,11 @@ const formulario = document.querySelector("#formulario-pedido");
 const boton = document.querySelector("#preparar-pedido");
 const numeroWhatsApp = "5493825679955";
 const enlacesConsulta = document.querySelectorAll(".consultar-producto");
-enlasesConsulta.forEach(function (enlace) {
+
+enlacesConsulta.forEach(function (enlace) {
   enlace.addEventListener("click", function () {
     const producto = enlace.dataset.producto;
+    document.querySelector("#pieza").value = producto;
   });
 });
 
